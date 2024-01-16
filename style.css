@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --text-color : rgb(232, 213, 213);
+    --default-font : 'Lemon', system-ui;
+}
+
+
+.homePage{
+    width: max(400px,100vw,100vw);
+    height: max(200px,100vh,100vh);
+    /* border: 2px solid red; */
+    background: linear-gradient(90deg,rgb(155, 175, 208),rgba(132, 4, 191, 0.306));
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around
+    
+}
+
+.imgLeft{
+    /* border: 2px solid black; */
+    height: 100%;
+    width: 40%;
+    position: relative;
+
+}
+.imgLeft>img{
+    height: 99.3%;
+    width: 100%;
+    position: relative;
+
+}
+.imgLeft>span:nth-child(2){
+position: absolute;
+bottom: 10px;
+left : 200px;
+color : var(--text-color);
+font-family: var(--default-font);
+font-weight: bold;
+background-color: rgb(81, 80, 80);
+opacity: 0.6;
+}
+.imgLeft>div{
+position: absolute;
+width: 100%;
+bottom: 5px;
+color : var(--text-color);
+font-family: var(--default-font);
+font-weight: bold;
+background-color: rgb(81, 80, 80);
+opacity: 0.6;
+text-align: center;
+}
+
+.contentRight{
+    /* border: 2px solid blue; */
+    height: 100%;
+    width: 60%;
+    display: flex;
+justify-content: start;
+align-items: center;
+flex-direction: column;
+}
+
+.captions{
+    /* border : 1px solid black; */
+    /* width: 100px;
+    height: 100px; */
+    height: 20vh;
+    width: 100%;
+    font-family: var(--default-font);
+    padding: 1rem;
+    /* line-height: 2.7rem; */
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+.form{
+    /* border : 1px solid black; */
+    width: 100px;
+    height: 100px;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+input{
+    width: 14rem;
+    height: 2rem;
+    padding: 4px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: var(--default-font);
+    box-shadow: 2px 2px 6px rgb(224, 2, 224);
+}
+
+input:invalid{
+    border: 2px solid red;
+}
+input:valid{
+    border: 2px solid green;
+}
+
+label{
+    display: block;
+    padding: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+
+    
+}
+.nameField{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    
+    
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.button{
+    margin-top: 3rem;
+}
+.button >button{
+    width: 4rem;
+    height: 2rem;
+    font-size: 1rem;
+    background-color: gray;
+    cursor: pointer;
+    border-radius: 9px;
+    padding: 3px;
+    color: var(--text-color);
+    font-family: var(--default-font);
+    box-shadow: 3px 3px 7px black;
+}
+
+.footer{
+    margin-top: 4rem;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.footer>a{
+    text-decoration: none;
+
+}
